@@ -5,11 +5,11 @@ metadata:
   annotations:
     traefik.ingress.kubernetes.io/affinity: "true"
 spec:
-rules:
-- host: 192.168.50.10
-  http:
-    paths:
-    - path: "/"
-      backend:
-        serviceName: my-nginx
-        servicePort: 8001
+  rules:
+  - host: 192.168.50.10
+    http:
+      paths:
+      - path: "/"
+        backend:
+          serviceName: my-nginx
+          servicePort: 80
